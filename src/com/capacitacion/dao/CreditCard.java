@@ -1,12 +1,7 @@
 package com.capacitacion.dao;
 
-public class CreditCard {
+public class CreditCard extends Card{
 
-	private String name;
-	private Long number;
-	private String dateFrom;
-	private String dateTo;
-	private short security;
 	private Double limit;
 
 	public CreditCard(String name, Long number, String dateFrom, String dateTo, short security, Double limit) {

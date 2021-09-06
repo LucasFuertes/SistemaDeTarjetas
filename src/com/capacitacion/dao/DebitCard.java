@@ -1,15 +1,13 @@
 package com.capacitacion.dao;
 
-public class DebitCard {
+import java.util.ArrayList;
 
-	private String name;
-	private long number;
-	private String dateFrom;
-	private String dateTo;
-	private short security;
-	private CreditCard credit;
-	
-	public DebitCard(String name, long number, String dateFrom, String dateTo, short security, CreditCard credit) {
+public class DebitCard extends Card{
+
+	private ArrayList<CreditCard> credit;
+
+	public DebitCard(String name, long number, String dateFrom, String dateTo, short security,
+			ArrayList<CreditCard> credit) {
 		super();
 		this.name = name;
 		this.number = number;
@@ -18,12 +16,10 @@ public class DebitCard {
 		this.security = security;
 		this.credit = credit;
 	}
-	
+
 	public DebitCard() {
 		super();
 	}
-
-
 
 	public String getName() {
 		return name;
@@ -33,11 +29,11 @@ public class DebitCard {
 		this.name = name;
 	}
 
-	public long getNumber() {
+	public Long getNumber() {
 		return number;
 	}
 
-	public void setNumber(long number) {
+	public void setNumber(Long number) {
 		this.number = number;
 	}
 
@@ -65,11 +61,11 @@ public class DebitCard {
 		this.security = security;
 	}
 
-	public CreditCard getCredit() {
+	public ArrayList<CreditCard> getCredit() {
 		return credit;
 	}
 
-	public void setCredit(CreditCard credit) {
+	public void setCredit(ArrayList<CreditCard> credit) {
 		this.credit = credit;
 	}
 
