@@ -2,7 +2,7 @@ package com.capacitacion.dao;
 
 import java.util.ArrayList;
 
-public class DebitCard extends Card{
+public class DebitCard extends Card {
 
 	private ArrayList<CreditCard> credit;
 
@@ -15,6 +15,15 @@ public class DebitCard extends Card{
 		this.dateTo = dateTo;
 		this.security = security;
 		this.credit = credit;
+	}
+
+	public DebitCard(String name, long number, String dateFrom, String dateTo, short security) {
+		super();
+		this.name = name;
+		this.number = number;
+		this.dateFrom = dateFrom;
+		this.dateTo = dateTo;
+		this.security = security;
 	}
 
 	public DebitCard() {
